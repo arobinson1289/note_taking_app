@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome To Note Taker</h1>
+        </div>
+        <h3>Submit Your Note Below</h3><br>
+        <form action="/api/notes" method="POST">
+            <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input type="text" class="form-control" id="nameInput" name="name"
+                    placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label for="subjectInput">Subject</label>
+                <input type="subject" name="subject" class="form-control" id="subjectInput" placeholder="Enter Note Subject (20 Charecters or Less)">
+            </div>
+            <div class="form-group">
+                    <label for="noteInput">Note</label>
+                    <textarea name="note" class="form-control" id="noteInput" rows="3"></textarea>
+                </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
